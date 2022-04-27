@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1019.0" style="-fx-background-color: #211A12;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.editRestaurant">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#464646" height="461.0" layoutX="15.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 85%;" width="976.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b0707" height="72.0" layoutX="20.0" layoutY="20.0" stroke="WHITE" strokeType="INSIDE" width="976.0" />
+        <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="946.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/pregunta.png" />
+            </image>
+        </ImageView>
+        <ImageView id="beforeArrow" fitHeight="50.0" fitWidth="40.0" layoutX="35.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+
+            </image>
+        </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="156.0" layoutX="411.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoUNO.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="146.0" text="Select The Restaurant to edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="508.0" text="Restaurant" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+        <TableView fx:id="tableBook" layoutX="372.0" layoutY="139.0" prefHeight="346.0" prefWidth="594.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="46.0" text="id" />
+                <TableColumn fx:id="colNB" prefWidth="133.0" text="Name of Booking" />
+                <TableColumn fx:id="colDate" prefWidth="111.0" text="Date" />
+                <TableColumn fx:id="colNDin" minWidth="0.0" prefWidth="95.0" text="N of Diners" />
+                <TableColumn fx:id="colTableN" prefWidth="72.0" text="Table N" />
+                <TableColumn fx:id="colVMenu" prefWidth="136.0" text="Vegetarian Menu" />
+            </columns>
+        </TableView>
+      <Button layoutX="189.0" layoutY="312.0" mnemonicParsing="false" onAction="#editRestaurant" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #FFA94B;" text="Save Changes" />
+      <Label layoutX="952.0" layoutY="68.0" text="Help!" textFill="#fffdfd" />
+      <TextField fx:id="txtName" layoutX="159.0" layoutY="189.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="txtCity" layoutX="159.0" layoutY="224.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="txtCapacity" layoutX="159.0" layoutY="260.0" prefHeight="25.0" prefWidth="181.0" />
+      <Label layoutX="66.0" layoutY="189.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="227.0" text="City" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="263.0" text="Capacitat" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="823.0" layoutY="504.0" mnemonicParsing="false" onAction="#deleteRestaurant" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #FFA94B;" text="Delete Restaurant" />
+      <Button fx:id="btnGoBack" layoutX="32.0" layoutY="31.0" mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #FFA94B;" text="Button" />
+    </children>
+</AnchorPane>

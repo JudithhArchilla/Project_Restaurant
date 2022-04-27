@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1019.0" style="-fx-background-color: #211A12;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addBook">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b0707" height="72.0" layoutX="20.0" layoutY="20.0" stroke="WHITE" strokeType="INSIDE" width="976.0" />
+       <ImageView fitHeight="72.0" fitWidth="176.0" layoutX="420.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../images/logoUNO.png" />
+           </image>
+       </ImageView>
+      <ImageView id="beforeArrow" fitHeight="46.0" fitWidth="62.0" layoutX="24.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#464646" height="461.0" layoutX="20.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 85%;" width="976.0" />
+      <TableView fx:id="tableBooks" layoutX="321.0" layoutY="132.0" prefHeight="424.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="53.0" text="id" />
+          <TableColumn fx:id="colName" prefWidth="133.0" text="Name of Booking" />
+            <TableColumn fx:id="colDate" prefWidth="94.0" text="Date" />
+            <TableColumn fx:id="colNDiners" minWidth="0.0" prefWidth="119.0" text="N of Diners" />
+            <TableColumn fx:id="colTableN" prefWidth="119.0" text="Table N" />
+            <TableColumn fx:id="colVegetarianMenu" prefWidth="139.0" text="Vegeratian Menu" />
+        </columns>
+      </TableView>
+      <Label layoutX="56.0" layoutY="164.0" prefHeight="34.0" prefWidth="27.0" text="Id" textFill="#fcfcfc">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="117.0" layoutY="167.0" prefHeight="29.0" prefWidth="187.0" />
+      <Label layoutX="40.0" layoutY="203.0" prefHeight="34.0" prefWidth="61.0" text="Name" textFill="#fcfcfc">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="117.0" layoutY="206.0" prefHeight="29.0" prefWidth="187.0" />
+      <Label layoutX="43.0" layoutY="245.0" prefHeight="34.0" prefWidth="61.0" text="Date" textFill="#fcfcfc">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVgMenu" layoutX="116.0" layoutY="366.0" prefHeight="29.0" prefWidth="187.0" />
+      <TextField fx:id="txtDate" layoutX="117.0" layoutY="246.0" prefHeight="29.0" prefWidth="187.0" />
+      <TextField fx:id="txtNroOfDinners" layoutX="117.0" layoutY="287.0" prefHeight="29.0" prefWidth="187.0" />
+      <Label layoutX="24.0" layoutY="282.0" prefHeight="34.0" prefWidth="92.0" text="N of diners" textFill="#fcfcfc">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="323.0" prefHeight="34.0" prefWidth="92.0" text="Table Nro" textFill="#fcfcfc">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTableNro" layoutX="116.0" layoutY="327.0" prefHeight="29.0" prefWidth="187.0" />
+      <Button fx:id="btnAddBook" layoutX="160.0" layoutY="419.0" mnemonicParsing="false" onAction="#addBook" prefHeight="46.0" prefWidth="137.0" style="-fx-background-color: #FFA94B;" text="Add Booking" />
+      <Label layoutX="43.0" layoutY="507.0" text="Book" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGoBack" layoutX="32.0" layoutY="33.0" mnemonicParsing="false" onAction="#goBack" prefHeight="46.0" prefWidth="109.0" style="-fx-background-color: #FFA94B;" text="Back" />
+      <Label layoutX="24.0" layoutY="366.0" prefHeight="34.0" prefWidth="92.0" text="Vegetarian" textFill="#fcfcfc">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
